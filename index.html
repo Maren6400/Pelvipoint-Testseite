@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PelviPoint Trier | Beckenbodentraining mit dem EMP-Stuhl</title>
+  <meta name="description" content="Beckenbodentraining in Trier – mit dem EMP-Beckenbodenstuhl. 28 Minuten, schmerzlos, 12.000 Muskelkontraktionen. Probetraining kostenlos. Südallee 34, Trier." />
+  <meta property="og:title" content="PelviPoint Trier | Beckenbodentraining mit dem EMP-Stuhl" />
+  <meta property="og:description" content="Beckenbodentraining in Trier – mit dem EMP-Beckenbodenstuhl. 28 Minuten, schmerzlos, 12.000 Muskelkontraktionen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "PelviPoint Trier",
+  "description": "Beckenbodentraining mit dem EMP-Stuhl in Trier. Schmerzlos, effektiv, für Frauen und Männer.",
+  "url": "https://www.pelvipoint.de",
+  "telephone": "+491607217646",
+  "email": "info@pelvipoint.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Südallee 34",
+    "addressLocality": "Trier",
+    "postalCode": "54290",
+    "addressCountry": "DE"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "14:00", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "13:00", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "14:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00"}
+  ]
+}
+</script>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div style="font-family:'Cormorant Garamond',Georgia,serif; font-size:2.2rem; font-weight:300; color:#2B5672; letter-spacing:2px; margin-bottom:8px;">Pelvi<em>Point</em></div>
+      <div style="font-size:0.65rem; letter-spacing:4px; text-transform:uppercase; color:#8aaabb; margin-bottom:24px;">Trier</div>
+      <div class="loader-line"><div class="loader-progress" id="loaderProgress"></div></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#start" class="nav-logo">
+        <img src="Logos/logo-pelvipoint.png" alt="PelviPoint Trier Logo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+        <span style="display:none; font-family:'Cormorant Garamond',Georgia,serif; font-size:1.6rem; font-weight:300; color:#2B5672; letter-spacing:1px;">Pelvi<em>Point</em></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#start" class="nav-link nav-mobile-only">Start</a>
+        <a href="#pelvistuhl" class="nav-link">Der Pelvistuhl</a>
+        <a href="#pelvitraining" class="nav-link">Pelvitraining</a>
+        <a href="#preise" class="nav-link">Preise &amp; Pakete</a>
+        <a href="#faq" class="nav-link">FAQs</a>
+        <a href="#studien" class="nav-link">Studien</a>
+        <a href="#kontakt" class="nav-link">Kontakt</a>
+        <a href="https://www.eTermin.net/haarfrei-trier/serviceid/536773" target="_blank" class="nav-link nav-cta">Termin buchen</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero" id="start">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-shape"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          <span>Beckenbodentraining · Trier</span>
+        </div>
+        <h1 class="hero-title reveal-up">
+          <span class="title-normal">28 Minuten.</span><br />
+          <span class="title-serif">12.000 Kontraktionen –</span><br />
+          <span class="title-normal">ohne </span><span class="title-serif">Anstrengung.</span>
+        </h1>
+        <p class="hero-sub reveal-up">
+          Der EMP-Beckenbodenstuhl stärkt Ihre Beckenbodenmuskulatur effektiv und schmerzfrei –
+          einfach sitzen, entspannen und trainieren. In unserem Studio in der Südallee 34 in Trier.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="https://www.eTermin.net/haarfrei-trier/serviceid/536773" target="_blank" class="btn btn-primary btn-lg">
+            <span>Kostenloses Probetraining buchen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#preise" class="btn btn-outline">Preise ansehen</a>
+        </div>
+        <div class="hero-stats reveal-up">
+          <div class="stat">
+            <div><span class="stat-num">28</span><span class="stat-plus"> Min</span></div>
+            <span class="stat-label">Pro Sitzung</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div><span class="stat-num">12K</span></div>
+            <span class="stat-label">Kontraktionen</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div><span class="stat-num">100</span><span class="stat-plus">%</span></div>
+            <span class="stat-label">Schmerzfrei</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div><span class="stat-num">0</span></div>
+            <span class="stat-label">Ausziehen nötig</span>
+          </div>
+        </div>
+        <p class="hero-tagline">In den Räumen von Haarfrei-Trier · Südallee 34 · 54290 Trier</p>
+      </div>
+
+      <div class="hero-right reveal-right">
+        <div class="hero-photo-wrap">
+          <img src="Fotos/pelvistuhl-hero.jpg" alt="PelviPoint Trier – EMP Beckenbodenstuhl" class="hero-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="hero-photo-placeholder" style="display:none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="10" r="3"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+            <span>Foto folgt</span>
+          </div>
+          <div class="hero-photo-badge">
+            <span class="badge-icon">✓</span>
+            <div>
+              <strong>Probetraining kostenlos</strong>
+              <small>Unverbindlich · Ohne Risiko</small>
+            </div>
+          </div>
+          <div class="hero-photo-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Vollständig bekleidet
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"><div class="scroll-dot"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Beckenbodentraining in Trier</span><span class="sep">✦</span>
+      <span>EMP-Technologie</span><span class="sep">✦</span>
+      <span>28 Minuten pro Sitzung</span><span class="sep">✦</span>
+      <span>Vollständig bekleidet</span><span class="sep">✦</span>
+      <span>12.000 Muskelkontraktionen</span><span class="sep">✦</span>
+      <span>Schmerzfrei &amp; Nicht invasiv</span><span class="sep">✦</span>
+      <span>Südallee 34, Trier</span><span class="sep">✦</span>
+      <span>Beckenbodentraining in Trier</span><span class="sep">✦</span>
+      <span>EMP-Technologie</span><span class="sep">✦</span>
+      <span>28 Minuten pro Sitzung</span><span class="sep">✦</span>
+      <span>Vollständig bekleidet</span><span class="sep">✦</span>
+      <span>12.000 Muskelkontraktionen</span><span class="sep">✦</span>
+      <span>Schmerzfrei &amp; Nicht invasiv</span><span class="sep">✦</span>
+      <span>Südallee 34, Trier</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- DER PELVISTUHL -->
+  <section class="section" id="pelvistuhl">
+    <div class="probe-section" style="padding:0; max-width:1300px; margin:0 auto;">
+      <div class="probe-image-wrap reveal-left">
+        <img src="Fotos/pelvistuhl.jpg" alt="Der Pelvistuhl – EMP Beckenbodenstuhl PelviPoint Trier"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="probe-image-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="10" r="3"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+          <span>Foto des Stuhls</span>
+        </div>
+      </div>
+      <div class="probe-content reveal-right" style="padding:2rem 0;">
+        <div class="probe-section-label">Der Pelvistuhl</div>
+        <h2>Trainieren im Sitzen.<br><em>Ohne Aufwand.</em></h2>
+        <p class="probe-text">
+          Viele Menschen beschäftigen sich erst mit dem Thema Beckenboden, wenn unangenehme Probleme auftreten –
+          Inkontinenz, Rückenschmerzen oder Schwäche nach der Schwangerschaft. Die Ursachen liegen oft in einer
+          zu schwachen Beckenbodenmuskulatur.
+        </p>
+        <p class="probe-text">
+          Der Pelvistuhl wurde von Urologen entwickelt und arbeitet mit
+          <strong>HI-EMP (High-Intensity-Electro-Magnetic-Power)</strong>: Elektromagnetische Wellen stimulieren
+          die Beckenbodenmuskulatur zu bis zu <strong>12.000 Kontraktionen in einer einzigen Sitzung</strong> –
+          eine Intensität, die durch normales Training oder Kegelübungen nie erreicht werden kann.
+        </p>
+        <ul class="probe-list">
+          <li>Von Urologen entwickelt – zur Stärkung erschlaffter Beckenbodenmuskulatur</li>
+          <li>Vollständig bekleidet – einfach hinsetzen und entspannen</li>
+          <li>Nicht invasiv, schmerzfrei, keine Nebenwirkungen</li>
+          <li>Für Frauen <em>und</em> Männer geeignet</li>
+          <li>Hilft bei Inkontinenz, Rückenproblemen &amp; nach der Schwangerschaft</li>
+        </ul>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="https://www.eTermin.net/haarfrei-trier/serviceid/536773" target="_blank" class="btn-probe">
+            Probetraining buchen →
+          </a>
+          <a href="#kontakt" class="btn btn-outline" style="cursor:none;">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="section section-alt" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Wirkung</p>
+        <h2 class="section-title reveal-up">Was der Pelvistuhl<br /><em>für Sie tut.</em></h2>
+        <p class="section-desc reveal-up">Eine straffe Beckenbodenmuskulatur wirkt sich positiv auf viele Lebensbereiche aus.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal-up" data-delay="0">
+          <div class="benefit-icon">💧</div>
+          <h3>Inkontinenz</h3>
+          <p>Stärkt die Beckenbodenmuskulatur und kann unkontrollierten Harnverlust deutlich reduzieren oder ganz beheben.</p>
+        </div>
+        <div class="benefit-card reveal-up" data-delay="100">
+          <div class="benefit-icon">🤰</div>
+          <h3>Nach der Schwangerschaft</h3>
+          <p>Unterstützt die Rückbildung nach Schwangerschaft und Geburt – sanft, effektiv und ohne körperliche Anstrengung.</p>
+        </div>
+        <div class="benefit-card reveal-up" data-delay="200">
+          <div class="benefit-icon">🏃</div>
+          <h3>Rücken &amp; Haltung</h3>
+          <p>Eine straffe Beckenbodenmuskulatur hat positive Auswirkungen auf den Rücken und die gesamte Körperhaltung.</p>
+        </div>
+        <div class="benefit-card reveal-up" data-delay="300">
+          <div class="benefit-icon">♂️</div>
+          <h3>Für Männer</h3>
+          <p>Der Stuhl ist ausdrücklich für alle Geschlechter entwickelt – auch Männer profitieren von einem gestärkten Beckenboden.</p>
+        </div>
+        <div class="benefit-card reveal-up" data-delay="400">
+          <div class="benefit-icon">⚡</div>
+          <h3>Maximale Effizienz</h3>
+          <p>12.000 Muskelkontraktionen in 28 Minuten – diese Intensität ist durch konventionelles Training oder Kegelübungen nicht erreichbar.</p>
+        </div>
+        <div class="benefit-card reveal-up" data-delay="500">
+          <div class="benefit-icon">✨</div>
+          <h3>Komfort &amp; Bequemlichkeit</h3>
+          <p>Vollständig bekleidet, keine Vorbereitung, kein Schwitzen – einfach hinsetzen, entspannen und das Training genießen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PELVITRAINING -->
+  <section class="section" id="pelvitraining">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Pelvitraining</p>
+        <h2 class="section-title reveal-up">So funktioniert<br /><em>das Training.</em></h2>
+        <p class="section-desc reveal-up">
+          Viele Frauen und Männer leiden unter den Folgen einer zu schwachen Beckenbodenmuskulatur.
+          Durch intensive elektromagnetische Wellen, die bis zu 8 cm tief in die Muskulatur eindringen,
+          werden alle drei Muskelschichten des Beckenbodens gleichzeitig aktiviert.
+        </p>
+      </div>
+      <div class="vn-grid">
+        <div class="vn-card reveal-up" data-delay="0">
+          <div class="vn-img-box">
+            <img src="Fotos/beckenboden-vorher.jpg" alt="Beckenboden vorher"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="vn-img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><rect x="3" y="3" width="18" height="18" rx="3"/></svg>
+            </div>
+          </div>
+          <div class="vn-label-big">Vorher</div>
+          <p class="vn-desc">Bei vielen Menschen erschlafft die Beckenbodenmuskulatur im Laufe der Zeit – und schränkt die Lebensqualität ein.</p>
+        </div>
+        <div class="vn-card reveal-up" data-delay="150">
+          <div class="vn-img-box">
+            <img src="Fotos/beckenboden-training.jpg" alt="Beckenboden Training"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="vn-img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+          </div>
+          <div class="vn-label-big">Training</div>
+          <p class="vn-desc">Die drei Muskelschichten des Beckenbodens werden durch elektromagnetische Wellen stimuliert und zu intensiven Kontraktionen gezwungen.</p>
+        </div>
+        <div class="vn-card reveal-up" data-delay="300">
+          <div class="vn-img-box">
+            <img src="Fotos/beckenboden-nachher.jpg" alt="Beckenboden nachher"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="vn-img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+          <div class="vn-label-big">Nachher</div>
+          <p class="vn-desc">Das passive Training kräftigt zuverlässig die Beckenbodenmuskulatur – und reduziert Beschwerden wie Inkontinenz spürbar.</p>
+        </div>
+      </div>
+
+      <!-- TRAINING FACTS -->
+      <div style="margin-top:5rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; text-align:center;">
+        <div style="padding:2rem; background:var(--primary-ultra); border:1.5px solid var(--border); border-radius:var(--radius-lg);">
+          <div style="font-family:var(--font-serif); font-size:2.5rem; color:var(--primary); font-weight:300;">28</div>
+          <div style="font-size:0.68rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); margin-top:4px;">Minuten pro Sitzung</div>
+        </div>
+        <div style="padding:2rem; background:var(--primary-ultra); border:1.5px solid var(--border); border-radius:var(--radius-lg);">
+          <div style="font-family:var(--font-serif); font-size:2.5rem; color:var(--primary); font-weight:300;">12K</div>
+          <div style="font-size:0.68rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); margin-top:4px;">Muskelkontraktionen</div>
+        </div>
+        <div style="padding:2rem; background:var(--primary-ultra); border:1.5px solid var(--border); border-radius:var(--radius-lg);">
+          <div style="font-family:var(--font-serif); font-size:2.5rem; color:var(--primary); font-weight:300;">8 cm</div>
+          <div style="font-size:0.68rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); margin-top:4px;">Eindringtiefe</div>
+        </div>
+        <div style="padding:2rem; background:var(--primary-ultra); border:1.5px solid var(--border); border-radius:var(--radius-lg);">
+          <div style="font-family:var(--font-serif); font-size:2.5rem; color:var(--primary); font-weight:300;">100%</div>
+          <div style="font-size:0.68rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-dim); margin-top:4px;">Schmerzfrei</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREISE -->
+  <section class="section section-alt" id="preise">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Preise &amp; Pakete</p>
+        <h2 class="section-title reveal-up">Investition in<br /><em>Ihre Gesundheit.</em></h2>
+      </div>
+      <div class="pricing-container">
+        <div class="pricing-header-note reveal-up">
+          <p>Das Probetraining ist kostenlos und unverbindlich – lernen Sie den Stuhl kennen, bevor Sie sich entscheiden.</p>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="pricing-table reveal-up">
+            <thead>
+              <tr>
+                <th>Paket</th>
+                <th>Einheiten</th>
+                <th>Preis pro Einheit</th>
+                <th>Gesamtpreis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Probetraining</td>
+                <td>1 Mal</td>
+                <td class="price-main">Gratis</td>
+                <td class="price-main">–</td>
+              </tr>
+              <tr class="highlight">
+                <td>10er Abo</td>
+                <td>10 Einheiten</td>
+                <td class="price-main">39 €</td>
+                <td class="price-main">390 €</td>
+              </tr>
+              <tr>
+                <td>15er Abo</td>
+                <td>15 Einheiten</td>
+                <td class="price-main">36 €</td>
+                <td class="price-main">550 €</td>
+              </tr>
+              <tr class="highlight">
+                <td>20er Abo <span class="pricing-badge">Beliebt</span></td>
+                <td>20 Einheiten</td>
+                <td class="price-main">34 €</td>
+                <td class="price-main">680 €</td>
+              </tr>
+              <tr>
+                <td>25er Abo</td>
+                <td>25 Einheiten</td>
+                <td class="price-main">32 €</td>
+                <td class="price-main">799 €</td>
+              </tr>
+              <tr class="highlight">
+                <td>30er Abo</td>
+                <td>30 Einheiten</td>
+                <td class="price-main">30 €</td>
+                <td class="price-main">899 €</td>
+              </tr>
+              <tr>
+                <td>40er Abo <span class="pricing-badge">Bestes Preis-Leistungs-Verhältnis</span></td>
+                <td>40 Einheiten</td>
+                <td class="price-main">25 €</td>
+                <td class="price-main">999 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pricing-cta reveal-up">
+          <a href="https://www.eTermin.net/haarfrei-trier/serviceid/536773" target="_blank" class="btn btn-primary btn-lg">
+            <span>Probetraining buchen</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://www.eTermin.net/haarfrei-trier/serviceid/533821" target="_blank" class="btn btn-outline">
+            Trainings-Termin buchen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">FAQ</p>
+        <h2 class="section-title reveal-up">Häufig gestellte<br /><em>Fragen.</em></h2>
+      </div>
+      <div class="faq-list reveal-up">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Was ist der EMP Beckenbodenstuhl?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Der Beckenbodenstuhl ist ein innovatives Trainingsgerät, das durch den Einsatz von Magnetfeldern eine intensive Stimulation der Beckenbodenmuskulatur ermöglicht – ohne körperliche Anstrengung und vollständig bekleidet.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Ist der EMP Beckenbodenstuhl nur für Frauen?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nein – der EMP Beckenbodenstuhl ist für alle Geschlechter entwickelt worden. Sowohl Frauen als auch Männer profitieren von einem gestärkten Beckenboden, z.B. bei Inkontinenz oder Rückenproblemen.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Welche Nebenwirkungen oder Kontraindikationen gibt es?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Das Training wird allgemein als sehr sicher eingestuft. Bei bestimmten gesundheitlichen Voraussetzungen – z.B. Herzschrittmacher, Metallimplantate im Beckenbereich oder Schwangerschaft – ist eine Nutzung nicht möglich. In der ersten Sitzung wird gemeinsam ein Anamnesebogen ausgefüllt.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Wann spüre ich die ersten Verbesserungen?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Viele Anwender:innen berichten bereits nach wenigen Trainingseinheiten von ersten positiven Ergebnissen. Ein optimales Ergebnis zeigt sich in der Regel nach einem vollständigen Trainingszyklus.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Was ist der Unterschied zu herkömmlichem Beckenbodentraining?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Der EMP Stuhl erzeugt bis zu 12.000 Muskelkontraktionen in einer 28-minütigen Sitzung – das ist durch Kegelübungen oder konventionelles Beckenbodentraining schlicht nicht erreichbar. Zudem werden alle drei Muskelschichten gleichzeitig aktiviert.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Was spüre ich während der Nutzung?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Das Training ist vollkommen schmerzfrei. Die meisten Nutzer:innen empfinden es als entspannend – Sie spüren ein leichtes Kribbeln oder Ziehen, das anzeigt, dass die Muskeln arbeiten.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Für welche Altersgruppen ist der Stuhl geeignet?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Der Stuhl ist für Erwachsene jeden Alters konzipiert – von jungen Menschen nach der Schwangerschaft bis hin zu älteren Menschen mit Inkontinenz-Beschwerden.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Was passiert während der ersten Sitzung?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Die Beraterin füllt gemeinsam mit Ihnen einen Anamnesebogen aus, bespricht eventuelle Kontraindikationen und ermittelt das optimale Intensitätslevel für Ihr Training. Dann können Sie direkt loslegen – kostenfrei und unverbindlich.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Wie viele Einheiten brauche ich?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Die benötigte Anzahl hängt von der Schwere der Beschwerden und dem individuellen Trainingsziel ab. In einem persönlichen Beratungsgespräch empfehlen wir das für Sie passende Paket – ganz ohne Druck und ohne Vertragsbindung.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIEN + PRESSE -->
+  <section class="section section-alt" id="studien">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Studien &amp; Presse</p>
+        <h2 class="section-title reveal-up">Wissenschaftlich<br /><em>belegt.</em></h2>
+        <p class="section-desc reveal-up">Die Wirksamkeit der EMP-Technologie ist durch klinische Studien und Fachpublikationen belegt.</p>
+      </div>
+      <div class="studien-grid">
+        <div class="studie-card reveal-up" data-delay="0">
+          <div class="studie-tag">Klinische Studie</div>
+          <h3>Effektivität bei Harninkontinenz</h3>
+          <p>Studien belegen eine signifikante Verbesserung bei Stressinkontinenz nach einem vollständigen Trainingszyklus mit der EMP-Technologie.</p>
+        </div>
+        <div class="studie-card reveal-up" data-delay="100">
+          <div class="studie-tag">Urologie</div>
+          <h3>Von Urologen entwickelt und empfohlen</h3>
+          <p>Der Pelvistuhl wurde in enger Zusammenarbeit mit Urologen entwickelt und wird in der Praxis als ergänzende Therapiemaßnahme eingesetzt.</p>
+        </div>
+        <div class="studie-card reveal-up" data-delay="200">
+          <div class="studie-tag">Erfahrungsberichte</div>
+          <h3>Zufriedene Nutzer:innen berichten</h3>
+          <p>Viele Anwender:innen berichten nach wenigen Sitzungen von spürbarer Verbesserung ihrer Beschwerden und einer deutlich gesteigerten Lebensqualität.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING CTA -->
+  <section class="booking-section">
+    <div class="booking-inner">
+      <p class="section-label" style="color:rgba(255,255,255,0.6);">Kostenlos &amp; Unverbindlich</p>
+      <h2 class="booking-title">Einfach mal<br /><em>ausprobieren.</em></h2>
+      <p class="booking-sub">Das Probetraining ist kostenlos – kein Druck, keine Verpflichtung. Nur ein entspanntes Kennenlernen.</p>
+      <div class="booking-actions">
+        <a href="https://www.eTermin.net/haarfrei-trier/serviceid/536773" target="_blank" class="btn btn-white btn-lg">
+          <span>Probetraining buchen</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+491607217646" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,0.5);">
+          Jetzt anrufen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Kontakt</p>
+        <h2 class="section-title reveal-up">Wir freuen uns<br /><em>auf Sie.</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <strong>Adresse</strong>
+                <span>Südallee 34, 54290 Trier<br>In den Räumen von Haarfrei-Trier</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <strong>Telefon</strong>
+                <a href="tel:+491607217646">+49 160 7217646</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <strong>E-Mail</strong>
+                <a href="mailto:info@pelvipoint.de">info@pelvipoint.de</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <strong>Öffnungszeiten</strong>
+                <table class="hours-table">
+                  <tr><td>Montag</td><td>14:00 – 20:00 Uhr</td></tr>
+                  <tr><td>Dienstag</td><td>13:00 – 20:00 Uhr</td></tr>
+                  <tr><td>Mittwoch</td><td>14:00 – 18:00 Uhr</td></tr>
+                  <tr><td>Donnerstag</td><td>09:00 – 18:00 Uhr</td></tr>
+                  <tr><td>Freitag</td><td>09:00 – 20:00 Uhr</td></tr>
+                  <tr><td>Samstag</td><td>09:00 – 17:00 Uhr</td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/people/PelviPoint-Trier/61566217134633/" target="_blank" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/pelvipoint_trier/" target="_blank" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <div class="contact-form">
+            <h3>Schreiben Sie uns</h3>
+            <form id="contactForm" action="mail.php" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="vorname">Vorname</label>
+                  <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required>
+                </div>
+                <div class="form-group">
+                  <label for="nachname">Nachname</label>
+                  <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse</label>
+                <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+              </div>
+              <div class="form-group">
+                <label for="telefon">Telefon (optional)</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+49 ...">
+              </div>
+              <div class="form-group">
+                <label for="betreff">Betreff</label>
+                <input type="text" id="betreff" name="betreff" placeholder="Ihr Anliegen">
+              </div>
+              <div class="form-group">
+                <label for="nachricht">Nachricht</label>
+                <textarea id="nachricht" name="nachricht" rows="5" placeholder="Ihre Nachricht ..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Nachricht senden</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <p id="formSuccess" style="display:none; margin-top:1rem; font-size:0.88rem; color:var(--primary); text-align:center;">
+                Danke für Ihre Nachricht! Wir melden uns schnellstmöglich.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div style="font-family:'Cormorant Garamond',Georgia,serif; font-size:1.8rem; font-weight:300; color:rgba(255,255,255,0.9); margin-bottom:12px;">Pelvi<em>Point</em> <span style="font-size:1rem; color:rgba(255,255,255,0.5); font-family:var(--font-sans); letter-spacing:2px;">TRIER</span></div>
+        <p>Beckenbodentraining mit EMP-Technologie.<br>In den Räumen von Haarfrei-Trier, Südallee 34, Trier.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#pelvistuhl">Der Pelvistuhl</a>
+        <a href="#pelvitraining">Pelvitraining</a>
+        <a href="#preise">Preise &amp; Pakete</a>
+        <a href="#faq">FAQs</a>
+        <a href="#studien">Studien</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="cookies.html">Cookies</a>
+        <h4 style="margin-top:1.5rem;">Termin</h4>
+        <a href="https://www.eTermin.net/haarfrei-trier/serviceid/536773" target="_blank">Probetraining buchen</a>
+        <a href="https://www.eTermin.net/haarfrei-trier/serviceid/533821" target="_blank">Training buchen</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PelviPoint Trier · Alle Rechte vorbehalten</p>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
