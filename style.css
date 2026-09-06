@@ -481,6 +481,9 @@ button { cursor: none; font-family: inherit; }
   color: var(--primary); text-decoration: underline; text-underline-offset: 3px;
 }
 .studie-link:hover { color: var(--primary-2); }
+.studie-links { display: flex; flex-direction: column; gap: 0.5rem; }
+.studie-links .studie-link { margin-top: 0; }
+.studie-links { margin-top: 0.9rem; }
 
 /* ── BOOKING CTA ── */
 .booking-section {
