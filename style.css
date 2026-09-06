@@ -527,14 +527,19 @@ button { cursor: none; font-family: inherit; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1.2rem; }
 .form-group label { font-size: 0.72rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); font-weight: 500; }
-.form-group input, .form-group textarea {
+.form-group input, .form-group textarea, .form-group select {
   background: var(--off-white); border: 1.5px solid var(--border);
   border-radius: var(--radius); padding: 0.85rem 1rem;
   font-family: var(--font-sans); font-size: 0.9rem; color: var(--text);
   outline: none; transition: border-color 0.3s, background 0.3s; resize: vertical;
 }
+.form-group select { appearance: none; cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b8296' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 1rem center; background-size: 18px;
+}
+.form-group select:invalid { color: var(--text-faint); }
 .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-faint); }
-.form-group input:focus, .form-group textarea:focus { border-color: var(--primary); background: var(--primary-ultra); }
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--primary); background-color: var(--primary-ultra); }
 
 /* ── HOURS TABLE ── */
 .hours-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }

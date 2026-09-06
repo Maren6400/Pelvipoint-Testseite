@@ -157,7 +157,7 @@ function initCounters() {
     btn.style.opacity = '0.6'; btn.style.pointerEvents = 'none';
     try {
       const data = new FormData(form);
-      const res = await fetch('mail.php', { method: 'POST', body: data });
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
       if (res.ok) {
         form.reset();
         if (success) success.style.display = 'block';
