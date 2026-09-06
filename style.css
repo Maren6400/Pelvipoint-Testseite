@@ -476,6 +476,11 @@ button { cursor: none; font-family: inherit; }
 }
 .studie-card h3 { font-family: var(--font-serif); font-size: 1.15rem; font-weight: 400; color: var(--dark); margin-bottom: 0.6rem; line-height: 1.4; }
 .studie-card p { font-size: 0.85rem; color: var(--text-dim); line-height: 1.7; }
+.studie-link {
+  display: inline-block; margin-top: 0.9rem; font-size: 0.82rem; font-weight: 600;
+  color: var(--primary); text-decoration: underline; text-underline-offset: 3px;
+}
+.studie-link:hover { color: var(--primary-2); }
 
 /* ── BOOKING CTA ── */
 .booking-section {
