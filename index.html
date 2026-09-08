@@ -651,10 +651,11 @@
         <div class="contact-form-wrap reveal-right">
           <div class="contact-form">
             <h3>Schreiben Sie uns</h3>
-            <form id="contactForm" action="https://formsubmit.co/ajax/info@pelvipoint.de" method="post">
-              <input type="hidden" name="_subject" value="Neue Kontaktanfrage – PelviPoint Website">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
+            <form id="contactForm" action="/contact.php" method="post">
+              <div style="position:absolute; left:-9999px;" aria-hidden="true">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="vorname">Vorname</label>
