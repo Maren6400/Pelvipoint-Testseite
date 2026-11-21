@@ -648,3 +648,33 @@ button { cursor: none; font-family: inherit; }
 @media (max-width: 768px) {
   .page-hero { padding: 100px 0 60px; }
 }
+
+/* Standort-Umschalter (Nav) */
+.loc-switch { position: relative; margin-right: 0.6rem; }
+.loc-switch summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.45rem;
+  font-size: 0.72rem; letter-spacing: 1.2px; text-transform: uppercase; font-weight: 500;
+  color: var(--primary); background: var(--primary-ultra);
+  border: 1.5px solid var(--primary-pale); border-radius: 100px; padding: 0.5rem 0.95rem;
+  transition: border-color 0.25s, background 0.25s;
+}
+.loc-switch summary::-webkit-details-marker { display: none; }
+.loc-switch summary:hover, .loc-switch[open] summary { border-color: var(--primary-light); background: var(--white); }
+.loc-caret { transition: transform 0.2s; }
+.loc-switch[open] .loc-caret { transform: rotate(180deg); }
+.loc-menu {
+  position: absolute; top: calc(100% + 0.5rem); left: 0; min-width: 220px; z-index: 10000;
+  background: var(--white); border: 1.5px solid var(--border); border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(43,86,114,0.15); padding: 0.4rem; display: flex; flex-direction: column;
+}
+.loc-menu a {
+  font-size: 0.85rem; color: var(--text); padding: 0.7rem 0.9rem; border-radius: 10px; text-decoration: none;
+}
+.loc-menu a:hover { background: var(--primary-ultra); color: var(--primary); }
+.loc-menu a.current { color: var(--primary); font-weight: 600; }
+.loc-menu a.current::after { content: ' ✓'; }
+.loc-menu a.loc-all { border-top: 1px solid var(--border); border-radius: 0 0 10px 10px; margin-top: 0.25rem; color: var(--text-dim); font-size: 0.78rem; }
+@media (max-width: 768px) {
+  .loc-switch { margin: 0 0 1rem; }
+  .loc-menu { position: static; box-shadow: none; margin-top: 0.5rem; }
+}

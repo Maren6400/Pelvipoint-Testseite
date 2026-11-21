@@ -24,6 +24,14 @@ $email     = trim($_POST['email'] ?? '');
 $telefon   = trim($_POST['telefon'] ?? '');
 $betreff   = trim($_POST['betreff'] ?? '');
 $nachricht = trim($_POST['nachricht'] ?? '');
+$standort   = trim($_POST['standort'] ?? '');
+$captchaAntwort = trim($_POST['captcha_antwort'] ?? '');
+$captchaToken   = trim($_POST['captcha_token'] ?? '');
+
+require __DIR__ . '/captcha-lib.php';
+if (!captcha_pruefen($captchaAntwort, $captchaToken)) {
+    respond(false, 'Die Rechenaufgabe war leider nicht richtig oder ist abgelaufen. Bitte versuchen Sie es noch einmal.');
+}
 
 if ($vorname === '' || $nachname === '' || $nachricht === '') {
     respond(false, 'Bitte alle Pflichtfelder ausfüllen.');
@@ -39,12 +47,14 @@ $nachname = $clean($nachname);
 $email    = $clean($email);
 $telefon  = $clean($telefon);
 $betreff  = $clean($betreff);
+$standort = in_array($clean($standort), ['Trier', 'Bad Zwischenahn'], true) ? $clean($standort) : 'Trier';
 
 $empfaenger = 'info@pelvipoint.de';
 
 // --- Mail an PelviPoint ---
-$betreffIntern = 'Neue Kontaktanfrage – PelviPoint Website';
+$betreffIntern = "Neue Kontaktanfrage – PelviPoint {$standort}";
 $bodyIntern = "Neue Nachricht über das Kontaktformular auf pelvipoint.de\n\n"
+    . "Standort: {$standort}\n"
     . "Name: {$vorname} {$nachname}\n"
     . "E-Mail: {$email}\n"
     . "Telefon: " . ($telefon !== '' ? $telefon : '-') . "\n"
@@ -58,7 +68,7 @@ $headersIntern = "From: PelviPoint Website <info@pelvipoint.de>\r\n"
 $okIntern = mail($empfaenger, '=?UTF-8?B?' . base64_encode($betreffIntern) . '?=', $bodyIntern, $headersIntern);
 
 // --- Bestätigungsmail an den Absender ---
-$betreffBestaetigung = 'Ihre Nachricht an PelviPoint Trier ist angekommen';
+$betreffBestaetigung = "Ihre Nachricht an PelviPoint {$standort} ist angekommen";
 $bodyBestaetigung = "Hallo {$vorname},\n\n"
     . "vielen Dank für Ihre Nachricht über unsere Website. Wir haben Ihre Anfrage erhalten und melden uns so schnell wie möglich bei Ihnen zurück.\n\n"
     . "Ihre Nachricht:\n{$nachricht}\n\n"
@@ -66,7 +76,7 @@ $bodyBestaetigung = "Hallo {$vorname},\n\n"
     . "Ihr PelviPoint-Team\n"
     . "https://pelvipoint.de";
 
-$headersBestaetigung = "From: PelviPoint Trier <info@pelvipoint.de>\r\n"
+$headersBestaetigung = "From: PelviPoint {$standort} <info@pelvipoint.de>\r\n"
     . "Content-Type: text/plain; charset=UTF-8";
 
 mail($email, '=?UTF-8?B?' . base64_encode($betreffBestaetigung) . '?=', $bodyBestaetigung, $headersBestaetigung);

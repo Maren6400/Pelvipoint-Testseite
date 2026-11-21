@@ -150,10 +150,26 @@ function initCounters() {
 (function initForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
+  const captchaUrl = form.action.replace(/contact\.php$/, 'captcha.php');
+  const frage = document.getElementById('captchaFrage');
+  const token = document.getElementById('captcha_token');
+  async function ladeFrage() {
+    try {
+      const r = await fetch(captchaUrl, { cache: 'no-store' });
+      const d = await r.json();
+      frage.textContent = 'Sicherheitsfrage: ' + d.frage;
+      token.value = d.token;
+    } catch (err) {
+      frage.textContent = 'Sicherheitsfrage konnte nicht geladen werden – bitte Seite neu laden.';
+    }
+  }
+  ladeFrage();
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const success = document.getElementById('formSuccess');
+    const error = document.getElementById('formError');
+    if (error) error.style.display = 'none';
     btn.style.opacity = '0.6'; btn.style.pointerEvents = 'none';
     try {
       const data = new FormData(form);
@@ -161,7 +177,11 @@ function initCounters() {
       if (res.ok) {
         form.reset();
         if (success) success.style.display = 'block';
+      } else {
+        const d = await res.json().catch(() => ({}));
+        if (error) { error.textContent = d.message || 'Beim Senden ist ein Fehler aufgetreten.'; error.style.display = 'block'; }
       }
+      ladeFrage();
     } catch (err) {
       /* Fallback: einfach Danke-Meldung zeigen */
       if (success) success.style.display = 'block';
