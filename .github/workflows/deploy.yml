@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -16,11 +17,12 @@ jobs:
         run: sudo apt-get install -y lftp
 
       - name: Deploy via FTPS
+        timeout-minutes: 8
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
           lftp -u "$FTP_USERNAME","$FTP_PASSWORD" \
-            -e "set ssl:verify-certificate false; set ssl:check-hostname false; mirror --reverse --delete --exclude-glob .git --exclude-glob .github ./ /pelvipoint.de/; quit" \
-            ftps://"$FTP_SERVER"
+            -e "set ssl:verify-certificate false; set ssl:check-hostname false; set ftp:ssl-force true; mirror --reverse --delete --exclude-glob .git --exclude-glob .github ./ /pelvipoint.de/; quit" \
+            ftp://"$FTP_SERVER"
